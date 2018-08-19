@@ -1,0 +1,693 @@
+/*
+Theme Name:   Arke Child
+Theme URI:    http://example.com/arke-child/
+Description:  Arke Child Theme
+Author:       Sarah Bartley
+Author URI:   http://example.com
+Template:     arke
+Version:      1.0.0
+License:      GNU General Public License v2 or later
+License URI:  http://www.gnu.org/licenses/gpl-2.0.html
+Tags:         arke
+Text Domain:  arke-child
+*/
+
+@font-face {
+    font-family: "Tex-Gyre-Heros";
+    src: url("fonts/TeX-Gyre-Heros/texgyreheros-bold.otf") format("opentype"),
+    url("fonts/TeX-Gyre-Heros/texgyreheros-regular.otf") format("opentype");
+}
+
+html.responsive-menu-open body {
+    overflow-y: hidden;
+    position: fixed;
+}
+
+a {
+    text-decoration: underline;
+}
+
+body {
+    font-family: "Helvetica Neue", "Tex-Gyre-Heros", sans-serif;
+    margin: 0;
+    max-width: none;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    width: 100vw;
+    background: #fff;
+    z-index: 9001;
+}
+
+header.no-background {
+    background: none;
+}
+
+footer {
+    width: 100vw;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+}
+
+footer.unfix-footer {
+    position: inherit;
+}
+
+header.site-header {
+    padding-top: 0;
+    padding-bottom: 0;
+}
+
+header .site-header-container {
+    position: relative;
+    max-width: 930px;
+    margin: 20px auto 0 auto;
+    padding: 0 15px;
+}
+
+footer .social-menu .menu-social-menu-container #s-menu {
+    display: flex;
+    justify-content: flex-end;
+    position: relative;
+    max-width: 930px;
+    margin: 20px auto 0 auto;
+    list-style-type: none;
+    padding: 0 15px 50px 15px;
+}
+
+footer .social-menu .menu-social-menu-container #s-menu li a {
+    margin-left: 15px;
+    padding: 0;
+    text-decoration: none;
+}
+
+footer .social-menu .menu-social-menu-container #s-menu li a .menu-image-title {
+    font-family: "Helvetica-Neue", "Tex-Gyre-Heros", sans-serif;
+    color: #000;
+    font-size: 24px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    line-height: 35px;
+}
+
+footer .social-menu .menu-social-menu-container #s-menu li a:hover {
+    opacity: 0.5;
+}
+
+footer .social-menu .menu-social-menu-container #s-menu li a img {
+    width: 33px;
+}
+
+.site-branding {
+    padding-top: 0;
+}
+
+.site-branding a svg {
+    height: 45px;
+}
+
+#site-menu {
+    padding: 0 0 50px;
+    margin-top: 20px;
+}
+
+#site-menu li a {
+    margin-left: 15px;
+    padding: 0;
+    font-size:14pt;
+    font-weight: bold;
+    color: #000;
+}
+#site-menu li a:hover {
+    color: #ff00cf;
+}
+
+#site-menu li.current_page_item a {
+    color: #ff00cf;
+}
+
+#responsive-menu li a {
+    font-weight: 800;
+    margin-bottom: 20px;
+}
+
+#responsive-menu-container li.responsive-menu-item.menu-item-type-custom {
+    display: inline;
+    width: 35px;
+}
+
+#responsive-menu-container li.responsive-menu-item.menu-item-type-custom a {
+    display: inline;
+    width: auto;
+}
+
+
+#responsive-menu li a img {
+    width: 35px;
+}
+
+div#responsive-menu-container div#responsive-menu-title {
+    margin-bottom: 70px;
+}
+
+.artwork-svg-container {
+    display: flex;
+    justify-content: flex-start;
+    width: 100vw;
+    margin: 0 auto;
+    position: fixed;
+    top: 50px;
+}
+
+.artwork-svg-container svg {
+    height: 100vh;
+}
+
+/*about page & contact page*/
+
+.about-page, .contact-page {
+    margin-top: 150px;
+    width: 100vw;
+}
+
+.about-page .content-area, .contact-page .content-area {
+    max-width: 930px;
+    padding: 0 15px;
+    margin: 0 auto;
+}
+
+.about-page .content-area h2, .contact-page .content-area h2 {
+    font-size: 40px;
+}
+
+.about-page .content-area p, .contact-page .content-area .contact-form {
+    line-height: 30px;
+    font-size: 18px;
+    font-family: "Avenir", "Lato", sans-serif;
+    color: #4d4d4d;
+}
+
+.contact-page .content-area .contact-form span {
+    color: #ff00cf;
+}
+
+.contact-page .content-area button.wpforms-submit.submit-button {
+    color: #4d4d4d;
+    line-height: 30px;
+    font-size: 18px;
+    font-family: "Avenir", "Lato", sans-serif;
+}
+
+/*work page*/
+
+.projects-container {
+    width: 100vw;
+    margin-top: 110px;
+}
+
+.projects-container.container .unslider {
+    overflow: hidden;
+    position: relative;
+}
+
+.project {
+    overflow-x: visible !important;
+    overflow-y: visible !important;
+    width: 900px;
+    margin: 0 auto;
+}
+
+.project ul li {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 550px;
+}
+
+.project ul li div.project-image,
+.project ul li div.gif-background-img {
+    height: 95%;
+    width: 97.5%;
+}
+
+.project .project-image {
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.project .project-image.gif-class {
+    background-size: auto 90%;
+    background-position: center center;
+}
+
+.project .gif-background-img {
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.project .gif-background-img .project-image.gif-class {
+    background-size: contain;
+    width: 62%;
+    top: 6%;
+}
+
+.project .info-block {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 550px;
+    width: 100%;
+    opacity: 1;
+}
+
+.project .info-block .info-block-text {
+    height: 95%;
+    width: 97.5%;
+    box-sizing: border-box;
+    padding: 100px 50px 0 50px;
+    line-height: 30px;
+    background: #ffffff;
+    color: #4d4d4d;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.5s;
+    z-index: 1000;
+    font-size: 18px;
+    font-family: "Avenir", "Lato", sans-serif;
+}
+
+.project .info-block .info-block-text:hover {
+    opacity: 0.95;
+    pointer-events: auto;
+}
+
+.project .info-block .info-block-text h3 {
+    color: #000;
+    font-family: "Helvetica Neue","Tex-Gyre-Heros", sans-serif;
+}
+
+.project .info-block .info-block-text h4 {
+    font-family: "Helvetica Neue", "Tex-Gyre-Heros", sans-serif;
+    color: #4d4d4d;
+}
+
+.project .info-block .info-block-text p a {
+    color:#4d4d4d;
+    text-decoration: underline;
+}
+
+.info-icon, .info-icon-pulse {
+    position: absolute;
+    display: block;
+    bottom: 25px;
+    right: 20px;
+    z-index: 999;
+}
+
+.info-icon img {
+    width: 23px;
+}
+
+.info-icon-pulse {
+    content: '';
+    width: 23px;
+    height: 23px;
+    border: 2px solid #ff00cf;
+    border-radius: 50%;
+    animation: pulsate infinite 3s;
+}
+
+.info-icon:hover ~ .info-block-text {
+    opacity: 0.95;
+    pointer-events: auto;
+}
+
+.info-icon:hover {
+    display: none;
+}
+
+.prev {
+    border-bottom: 3px solid;
+    border-left: 3px solid;
+    transform: rotate(45deg);
+    left: 10px;
+}
+
+.next {
+    border-bottom: 3px solid;
+    border-left: 3px solid;
+    transform: rotate(-135deg);
+    right: 10px;
+}
+
+.unslider-arrow {
+    width: 25px;
+    height: 25px;
+    border-color: #ededed;
+    position: absolute;
+    top: 50%;
+    margin-top: -31px;
+}
+
+.arrow-div {
+    position: absolute;
+    width: 50vw;
+    height: 550px;
+}
+
+.div-next {
+    left: 50vw;
+}
+
+.swipe-left-prompt {
+    display: none;
+}
+
+/*case study page*/
+
+.case-studies-template .case-study-close-button {
+    font-weight: bold;
+    text-decoration: none;
+    color: #000;
+    font-size: 18px;
+    position: absolute;
+    right: 5vw;
+}
+
+.case-studies-template .case-study-close-button:hover {
+    color: #ff00cf;
+}
+
+.case-studies-template .back-button {
+    font-weight: bold;
+    text-decoration: none;
+    color: #000;
+    font-size: 18px;
+    margin: 100px auto 50px auto;
+}
+
+.case-studies-template .back-button:hover {
+    color: #ff00cf;
+}
+
+.case-studies-template .content-area {
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    align-items: center;
+}
+
+.case-studies-template .content-area h1 {
+    font-size: 60px;
+    margin-top: 120px;
+    margin-bottom: 0;
+}
+
+.case-studies-template .content-area h2 {
+    font-size: 40px;
+    width: 660px;
+    min-width: 35vw;
+    color: #4d4d4d;
+}
+
+.case-studies-template .content-area h3 {
+    font-size: 28px;
+    width: 660px;
+    min-width: 35vw;
+    color: #4d4d4d;
+}
+
+.case-studies-template .content-area h3 span {
+    color: #fdd408;
+}
+
+.case-studies-template .content-area p, .case-studies-template .content-area ul {
+    line-height: 30px;
+    font-size: 18px;
+    font-family: "Avenir", "Lato", sans-serif;
+    color: #4d4d4d;
+    width: 660px;
+    min-width: 35vw;
+    padding-left: 0;
+}
+
+.case-studies-template .content-area ul li {
+    list-style-type: none;
+    margin-bottom: 20px;
+    text-indent: -10px;
+}
+
+.case-studies-template .content-area ul li:before {
+    content: "-";
+    text-indent: -10px;
+}
+
+
+.case-studies-template .content-area h4, h5 {
+    font-family: "Avenir", "Lato", sans-serif;
+    color: #4d4d4d;
+    font-weight: bold;
+    font-size: 24px;
+}
+
+.case-studies-template .content-area h5 {
+    width: 660px;
+    min-width: 35vw;
+}
+
+.wp-caption .wp-caption-text {
+    font-family: "Avenir", "Lato", sans-serif;
+    color: #4d4d4d;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.case-studies-template .content-area .gif-background-color {
+    background-color: #1c2029;
+    display: flex;
+    justify-content: center;
+    width: 100vw;
+}
+
+.case-studies-template .content-area img {
+    margin: 40px auto 40px auto;
+    max-width: 70vw;
+    display: block;
+}
+
+.case-studies-template .content-area img.full-width-image {
+    max-width: 100vw;
+}
+
+.case-studies-template .content-area img.large-width-image {
+    max-width: 90vw;
+}
+
+.case-studies-template .content-area img.small-width-image {
+    max-width: 40vw;
+    margin-top: 0;
+}
+
+.case-studies-template ~ button#responsive-menu-button {
+    display: none;
+}
+
+@keyframes pulsate {
+    0% {
+        transform: scale(1, 1);
+        opacity: 1;
+    }
+    50%, 100% {
+        transform: scale(1.75, 1.75);
+        opacity: 0;
+    }
+}
+
+
+@media screen and (max-width: 800px){
+
+    body {
+        padding: 0;
+    }
+
+    header.site-header {
+        padding-bottom: 20px;
+    }
+
+    .case-studies-template .content-area img {
+        max-width: 100vw;
+    }
+
+    .case-studies-template .content-area img.large-width-image {
+        max-width: 100vw;
+    }
+
+    .case-studies-template .content-area img.small-width-image {
+        max-width: 80vw;
+    }
+
+    .case-studies-template .content-area p,
+    .case-studies-template .content-area ul,
+    .case-studies-template .content-area h1,
+    .case-studies-template .content-area h2,
+    .case-studies-template .content-area h3,
+    .case-studies-template .content-area h4,
+    .case-studies-template .content-area h5
+    {
+        width: auto;
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+
+    footer .social-menu .menu-social-menu-container #s-menu {
+        display: none;
+    }
+
+    .case-studies-template ~ footer .social-menu #s-menu {
+        display: flex;
+    }
+
+    .artwork-svg-container {
+        width: 95vw;
+    }
+
+    .artwork-svg-container svg {
+        height: 85vh;
+    }
+
+}
+
+@media screen and (max-width: 990px){
+
+    .info-icon, .info-icon-pulse {
+        display: none;
+    }
+
+    .unslider-arrow, .arrow-div {
+        display: none;
+    }
+
+    .projects-container.container .unslider .carousel-container {
+        overflow-x: scroll;
+        overflow-y: hidden;
+    }
+
+    .project {
+        width: 100vw;
+    }
+
+    .project ul li {
+        height: 60vw;
+        position: relative;
+    }
+
+    .project .info-block {
+        position: static;
+        height: auto;
+    }
+
+    .project .info-block .info-block-text {
+        padding-top: 0;
+        height: auto;
+        pointer-events: auto;
+        opacity: 1;
+    }
+
+    .swipe-left-prompt {
+        position: absolute;
+        display: block;
+        bottom: 35px;
+        right: 30px;
+
+        animation: 0.5s fadeOut 9s forwards;
+    }
+
+    .swipe-left-prompt .arrow {
+        display: inline-block;
+        position: relative;
+        height: 15px;
+        width: 15px;
+        border-right: 2px solid #fff;
+        border-bottom: 2px solid #fff;
+        transform: rotate(-45deg);
+        animation: 3s arrowFlash;
+        animation-iteration-count: 3;
+
+    }
+
+    .swipe-left-prompt .arrow.arrow1 {
+        animation-delay: 0.2s;
+    }
+    .swipe-left-prompt .arrow.arrow2 {
+        animation-delay: 0.4s;
+    }
+}
+
+@keyframes arrowFlash {
+    0% {
+        left: 0;
+        opacity: 1;
+    }
+    15% {
+        left: 6px;
+        opacity: 0;
+    }
+    30% {
+        left: -6px;
+        opacity: 0;
+    }
+    45% {
+        left: 0;
+        opacity: 1;
+    }
+}
+
+@keyFrames fadeOut {
+    0% {
+        opacity: 1;
+        transform: scale(1);
+    }
+    100% {
+        opacity: 0;
+        transform: scale(0.25);
+    }
+}
+
+#A-3 path{
+    animation: 0.5s pinkFill forwards;
+    animation-delay: 3s;
+}
+
+#R-2 {
+    animation: 0.5s pinkFill forwards;
+    animation-delay: 4s;
+}
+
+#T {
+    animation: 0.5s pinkFill forwards;
+    animation-delay: 5s;
+}
+
+@keyframes pinkFill {
+    from {
+        fill: #000;
+    }
+
+    to {
+        fill: #ff00cf;
+    }
+}
