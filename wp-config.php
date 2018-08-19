@@ -80,8 +80,8 @@ $table_prefix  = 'wp_';
 define('WP_DEBUG', false);
 
 // TODO: Remove before deploying
-define( 'WP_SITEURL', 'http://' . $_SERVER['HTTP_HOST'] . '/portfolio' );
-define( 'WP_HOME', 'http://' . $_SERVER['HTTP_HOST'] . '/portfolio' );
+//define( 'WP_SITEURL', 'http://' . $_SERVER['HTTP_HOST'] . '/portfolio' );
+//define( 'WP_HOME', 'http://' . $_SERVER['HTTP_HOST'] . '/portfolio' );
 
 /* That's all, stop editing! Happy blogging. */
 
