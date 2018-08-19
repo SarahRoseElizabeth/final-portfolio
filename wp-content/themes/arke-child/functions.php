@@ -98,6 +98,3 @@ if ( ! function_exists( 'arke_setup' ) ) :
 		add_filter('the_content', 'filter_ptags_on_images');
 	}
 endif;
-?>
-
-
