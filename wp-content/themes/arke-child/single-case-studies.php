@@ -2,6 +2,7 @@
 wp_head();
 ?>
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon" href="<?php echo get_stylesheet_directory_uri(); ?>/favicon.ico" />
 	<div class="case-studies-template">
         <a href="<?= get_permalink(14)?>" class="case-study-close-button">X CLOSE</a>
 		<div class="content-area">
