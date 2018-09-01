@@ -17,6 +17,9 @@
 	<head>
 		<meta charset="<?php bloginfo( 'charset' ); ?>">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta property="og:title" content="Sarah Bartley Portfolio" />
+        <meta property="og:description" content="Hi my name is Sarah and I am a visual interaction designer. Here you can find a collection of some of my personal projects." />
+        <meta property="og:image" content="<?php echo get_theme_file_uri('/images/homepage.png')?>" />
 		<link rel="profile" href="http://gmpg.org/xfn/11">
         <link rel="shortcut icon" href="<?php echo get_stylesheet_directory_uri(); ?>/favicon.ico" />
 		<?php wp_head(); ?>

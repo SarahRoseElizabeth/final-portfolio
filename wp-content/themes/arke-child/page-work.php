@@ -14,7 +14,7 @@
                                 $gifClass = $image['project_image']['mime_type'] == "image/gif" ? "gif-class" : "";
                                 $swipePrompt = $key == 0 && $alsoKey == 0 ? '<div class="swipe-left-prompt"><div class="arrow arrow1"></div><div class="arrow arrow2"></div></div>' : '';
                                 if($image['background_image']){
-                                    echo "<li><div class='gif-background-img' style=\"background-image: url( '{$image['background_image']['url']}')\";><div class=\"project-image $gifClass\" style=\"background-image: url('{$image['project_image']['url']}'); background-color: {$image['background_color']};\"></div></div>$swipePrompt</li>";
+                                    echo "<li><div class='gif-background-img' style=\"background-image: url( '{$image['background_image']['url']}');\"><div class=\"project-image $gifClass\" style=\"background-image: url('{$image['project_image']['url']}'); background-color: {$image['background_color']};\"></div></div>$swipePrompt</li>";
                                 }
                                 else {
                                     echo "<li><div class=\"project-image $gifClass\" style=\"background-image: url('{$image['project_image']['url']}'); background-color: {$image['background_color']};\"></div>$swipePrompt</li>";
