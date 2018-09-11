@@ -154,26 +154,40 @@ div#responsive-menu-container div#responsive-menu-title {
 }
 
 .artwork-svg-container {
-    display: flex;
-    justify-content: flex-start;
-    width: 100vw;
     margin: 0 auto;
-    position: fixed;
-    top: 50px;
+    object-fit: contain;
+    max-width: 95vw;
+    height: 68vh;
 }
 
 .artwork-svg-container svg {
-    height: 100vh;
+    height: 100%;
 }
 
-/*about page & contact page*/
+@media screen and (max-width: 1400px) {
+    .artwork-svg-container svg {
+        height: auto;
+    }
+}
+
+/* home page, about page & contact page*/
+
+.home-page {
+    margin-top: 130px;
+}
 
 .about-page, .contact-page {
     margin-top: 150px;
     width: 100vw;
 }
 
-.about-page .content-area, .contact-page .content-area {
+@media screen and (max-width: 800px) {
+    .home-page {
+        margin-top: 150px;
+    }
+}
+
+.about-page .content-area, .contact-page .content-area, .home-page .content-area {
     max-width: 930px;
     padding: 0 15px;
     margin: 0 auto;
@@ -561,13 +575,13 @@ div#responsive-menu-container div#responsive-menu-title {
         display: flex;
     }
 
-    .artwork-svg-container {
-        width: 95vw;
-    }
+    /*.artwork-svg-container {*/
+        /*width: 95vw;*/
+    /*}*/
 
-    .artwork-svg-container svg {
-        height: 85vh;
-    }
+    /*.artwork-svg-container svg {*/
+        /*height: 85vh;*/
+    /*}*/
 
 }
 
@@ -664,30 +678,5 @@ div#responsive-menu-container div#responsive-menu-title {
     100% {
         opacity: 0;
         transform: scale(0.25);
-    }
-}
-
-#A-3 path{
-    animation: 0.5s pinkFill forwards;
-    animation-delay: 3s;
-}
-
-#R-2 {
-    animation: 0.5s pinkFill forwards;
-    animation-delay: 4s;
-}
-
-#T {
-    animation: 0.5s pinkFill forwards;
-    animation-delay: 5s;
-}
-
-@keyframes pinkFill {
-    from {
-        fill: #000;
-    }
-
-    to {
-        fill: #ff00cf;
     }
 }
