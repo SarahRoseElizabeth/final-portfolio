@@ -154,19 +154,29 @@ div#responsive-menu-container div#responsive-menu-title {
 }
 
 .artwork-svg-container {
-    margin: 0 auto;
-    object-fit: contain;
-    max-width: 95vw;
-    height: 68vh;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    left: 0;
+    top: 0;
 }
 
 .artwork-svg-container svg {
-    height: 100%;
+    height: 63%;
+    max-width: 90%;
+    overflow: visible;
+}
+
+.artwork-svg-container svg #text path {
+    opacity: 0;
 }
 
 @media screen and (max-width: 1400px) {
     .artwork-svg-container svg {
-        height: auto;
+        /*height: auto;*/
     }
 }
 
@@ -371,7 +381,7 @@ div#responsive-menu-container div#responsive-menu-title {
 .unslider-arrow {
     width: 25px;
     height: 25px;
-    border-color: #ededed;
+    border-color: #d3d3d3;
     position: absolute;
     top: 50%;
     margin-top: -31px;
@@ -492,8 +502,6 @@ div#responsive-menu-container div#responsive-menu-title {
 
 .case-studies-template .content-area .gif-background-color {
     background-color: #1c2029;
-    display: flex;
-    justify-content: center;
     width: 100vw;
 }
 
@@ -574,15 +582,6 @@ div#responsive-menu-container div#responsive-menu-title {
     .case-studies-template ~ footer .social-menu #s-menu {
         display: flex;
     }
-
-    /*.artwork-svg-container {*/
-        /*width: 95vw;*/
-    /*}*/
-
-    /*.artwork-svg-container svg {*/
-        /*height: 85vh;*/
-    /*}*/
-
 }
 
 @media screen and (max-width: 990px){

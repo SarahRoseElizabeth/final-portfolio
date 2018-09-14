@@ -15,6 +15,8 @@ function arke_child_enqueue() {
 
 	wp_enqueue_script('unslider-js', get_stylesheet_directory_uri() . '/js/aos.js', array('jquery'));
 	wp_enqueue_script('aos-js', get_stylesheet_directory_uri() . '/js/unslider-min.js', array('jquery'));
+	wp_enqueue_script('greensock-jquery', get_stylesheet_directory_uri() . '/js/greensock/jquery.gsap.min.js', array('jquery'));
+	wp_enqueue_script('greensock-js', get_stylesheet_directory_uri() . '/js/greensock/TweenMax.min.js', array('jquery'));
 	wp_enqueue_script('arke-child-js', get_stylesheet_directory_uri() . '/js/main.js', array('jquery', 'unslider-js'), '1.0.0', true);
 
 
