@@ -31,6 +31,7 @@ body {
     font-family: "Helvetica Neue", "Tex-Gyre-Heros", sans-serif;
     margin: 0;
     max-width: none;
+    overscroll-behavior: none;
 }
 
 header {
@@ -63,7 +64,7 @@ header.site-header {
 
 header .site-header-container {
     position: relative;
-    max-width: 930px;
+    max-width: 900px;
     margin: 20px auto 0 auto;
     padding: 0 15px;
 }
@@ -72,7 +73,7 @@ footer .social-menu .menu-social-menu-container #s-menu {
     display: flex;
     justify-content: flex-end;
     position: relative;
-    max-width: 930px;
+    max-width: 900px;
     margin: 20px auto 0 auto;
     list-style-type: none;
     padding: 0 15px 50px 15px;
@@ -153,39 +154,6 @@ div#responsive-menu-container div#responsive-menu-title {
     margin-bottom: 70px;
 }
 
-.artwork-svg-container {
-    width: 100vw;
-    height: 100vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    position: fixed;
-    left: 0;
-    top: 0;
-}
-
-.artwork-svg-container svg {
-    height: 63%;
-    max-width: 90%;
-    overflow: visible;
-}
-
-.artwork-svg-container svg #text path {
-    opacity: 0;
-}
-
-@media screen and (max-width: 1400px) {
-    .artwork-svg-container svg {
-        /*height: auto;*/
-    }
-}
-
-/* home page, about page & contact page*/
-
-.home-page {
-    margin-top: 130px;
-}
-
 .about-page, .contact-page {
     margin-top: 150px;
     width: 100vw;
@@ -198,7 +166,7 @@ div#responsive-menu-container div#responsive-menu-title {
 }
 
 .about-page .content-area, .contact-page .content-area, .home-page .content-area {
-    max-width: 930px;
+    max-width: 900px;
     padding: 0 15px;
     margin: 0 auto;
 }
@@ -365,36 +333,39 @@ div#responsive-menu-container div#responsive-menu-title {
 }
 
 .prev {
+    position: static !important;
+    left: auto !important;
+    right: auto !important;
     border-bottom: 3px solid;
     border-left: 3px solid;
     transform: rotate(45deg);
-    left: 10px;
 }
 
 .next {
     border-bottom: 3px solid;
     border-left: 3px solid;
     transform: rotate(-135deg);
-    right: 10px;
 }
 
 .unslider-arrow {
     width: 25px;
     height: 25px;
-    border-color: #d3d3d3;
-    position: absolute;
-    top: 50%;
-    margin-top: -31px;
+    border-color: #d2d2d2;
 }
 
 .arrow-div {
+    cursor: pointer;
     position: absolute;
-    width: 50vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 25vw;
     height: 550px;
 }
 
 .div-next {
-    left: 50vw;
+    position: absolute;
+    left: 75vw;
 }
 
 .swipe-left-prompt {
@@ -679,3 +650,5 @@ div#responsive-menu-container div#responsive-menu-title {
         transform: scale(0.25);
     }
 }
+
+
